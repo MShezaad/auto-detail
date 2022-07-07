@@ -1,0 +1,319 @@
+body{
+    font-family: 'Shadows Into Light', cursive;
+    padding:0;
+    margin:0;
+} 
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+    z-index: 100;
+}
+
+.navitop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: darkgrey;
+    padding:10px 20px;
+    border-radius: 10px;
+}
+.searchinput{
+    border:none;
+    background-color: transparent;
+}
+.searchinput::placeholder{
+    color:lightgrey;
+}
+.AO{
+    font-size: 30px;
+    cursor: pointer;
+}
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color:lightgrey;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slidertitle{
+    position: absolute;
+    top:10%;
+    right: 10%;
+    color:black; 
+    font-size: 60px;
+}
+.sliderprice{
+    position: absolute;
+    top:30%;
+    left: 10%;
+    font-weight: lighter;
+    color:black; 
+    font-size: 60px;
+}
+.slider-bg{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: lightcyan;
+    z-index: -1;
+}
+
+.buyButton{
+    font-family: 'Shadows Into Light', cursive;
+    font-style: italic;
+    position: absolute;
+    top:60%;
+    right: 10%;
+    font-weight: lighter;
+    color:lightgray;
+    background-color: black; 
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.buyButton:hover{
+    color:black;
+    background-color: lightgray; 
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.featureImage{
+    width: 50px;
+    height: 50px;
+}
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin:20px;
+}
+
+.featureDesc{
+    color:gray;
+    width:50%;
+    height:100px; 
+}
+.product{
+     height: 100vh;
+     background-color: whitesmoke;
+     position: relative;
+}
+
+.productImg{
+    width:25%;
+    padding-left: 150px;
+}
+.productDetails{
+     position: absolute;
+     bottom:45%;
+     right:0;
+     width:40%;
+     padding: 50px;
+} 
+
+.productTitle{
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.productDescription{
+    font: size 24px;
+    color: gray;
+}
+
+.sizes{
+     display: flex;
+}
+.size{
+    padding:5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.productButton{
+   float: right;  
+   padding: 10px 20px;
+   background-color: black;
+   color:whitesmoke;
+   cursor: pointer;
+   font-family: 'Shadows Into Light', cursive;
+
+}
+.productButton:hover{
+    background-color: whitesmoke;
+    color:black; 
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    padding:10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 14px 13px rgba(224,251,255,0.51); 
+box-shadow: 0px 0px 14px 13px rgba(224,251,255,0.51);
+}
+
+.payTitle{
+    font-size: 20px;
+    color:gray
+}
+
+label{
+    font-size: 15px;
+    font-weight: 300;
+    color:gray;
+}
+
+.payInput{
+    padding:10px;
+    margin:10px 0px;
+    border:none;
+    border-bottom: 1px solid gray;
+}
+
+.cardIcons{
+display: flex;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payInput.sm{
+    width:30%;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -7%;
+    left:0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 14px 13px rgba(224,251,255,0.51); 
+    box-shadow: 0px 0px 14px 13px rgba(224,251,255,0.51);
+    font-family: 'Shadows Into Light', cursive;
+    background-color: green;
+    color: white;
+    border:none;
+    cursor: pointer;
+
+}
+
+.close{
+    width:20px;
+    height:20px;
+    position: absolute;
+    background-color:gray;
+    color:white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+footer {
+    display: flex;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fInput {
+    padding: 5px;
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  
+  .fIcons{
+    display: flex;
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
